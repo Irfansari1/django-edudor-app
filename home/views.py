@@ -9,7 +9,7 @@ import random
 def home(request):
     
     items = list(Teacher.objects.all())
-    teachers = random.sample(items, 4)
+    teachers = random.sample(items, 3)
     
     form = ContactForm()
     if request.method == "POST":
